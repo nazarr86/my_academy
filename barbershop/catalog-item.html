@@ -6,9 +6,11 @@
 	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Барбершоп «Бородинский»</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="inner-page">
 <header class="main-header">
 	<nav class="main-navigation">
 		<a class="main-header-logo" href="index.html" >
@@ -42,7 +44,7 @@
 		<ul class="product-photo-preview">
 			<li><img src="img/product-small-1.jpg" alt="Фото в анфас" width="140" height="149"></li>
 			<li><img src="img/product-small-2.jpg" alt="Фото в профиль" width="140" height="149"></li>
-			<li><img src="img/product-small-3.jpg" alt="Фото отдельной части" width="140" height="149">></li>
+			<li><img src="img/product-small-3.jpg" alt="Фото отдельной части" width="140" height="149"></li>
 		</ul>
 	</section>
 	<section class="product-info">
@@ -54,7 +56,7 @@
 		для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать
 			отличным подарком.</p>
 		<p class="product-price">
-			<b>2900</b>
+			<b>2900 &#8381;</b>
 			<a href="#" class="button">Купить</a>
 		</p>
 		<h3>В набор входят:</h3>
@@ -92,19 +94,30 @@
 	<p>Введите свой логин и пароль</p>
 	<form class="login-form" action="#" method="post">
 		<p>
-			<input class="login-icon-user" type="text" name="login" placeholder="Логин" id="">
+			<label for="user-login" class="visually-hidden">Логин</label>
+			<input class="login-icon-user" type="text" name="login" placeholder="Логин" id="user-login">
 		</p>
 		<p>
-			<input class="login-icon-password" type="password" name="password" placeholder="Пароль" id="">
+			<label for="user-password" class="visually-hidden">Пароль</label>
+			<input class="login-icon-password" type="password" name="password" placeholder="Пароль" id="user-password">
 		</p>
 		<p class="login-password-info">
-			<input type="checkbox" name="remember" class="visually-hidden" id="">
-			Запомните меня
+			<label class="login-checkbox">
+				<input type="checkbox" name="remember" class="visually-hidden" id="">
+				Запомните меня
+			</label>
 			<a href="#" class="restore">Я забыл пароль</a>
 		</p>
 		<button class="button"type="submit">Войти</button>
 	</form>
-	<span class="modal-close">x</span>
+	<button class="modal-close" type="button">Закрыть</button>
+</section>
+<section class="modal modal-map">
+	<h2 class="visually-hidden">Как до нас добратся</h2>
+	<p>
+		<img src="img/map.jpg" alt="Офис компании по адресу ул. Большая Конюшеная 19/9, Санкт-Петербург">
+	</p>
+	<button class="modal-close" type="button">Закрыть</button>
 </section>
 </body>
 </html>
