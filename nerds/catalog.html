@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Каталог дизайн-студия «Nerds»</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="main-header">
@@ -34,6 +35,24 @@
         <h1 class="visually-hidden">Дизайн-студия «Nerds»</h1>
         <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
+            <form action="#" class="filter" method="get">
+                <fieldset>
+                    <legend>Стоимость</legend>
+                    <div class="range-filter">
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar" style="width: 70%"></div>
+                            </div>
+                            <div class="toggle min-toggle"></div>
+                            <div class="toggle max-toggle"></div>
+                        </div>
+                        <div class="price-controls">
+                            от <input type="text" class="min-price" value="0">
+                            до <input type="text" class="max-price" value="15000">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
 
         </section>
         <section class="catalog">
